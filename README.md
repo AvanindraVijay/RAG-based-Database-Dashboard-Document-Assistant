@@ -117,36 +117,7 @@ The assistant automatically uses previous context.
 
 # 🏗️ System Architecture
 
-```text
-User Question
-      │
-      ▼
- ┌─────────────┐
- │  FastAPI    │
- └─────────────┘
-      │
-      ▼
- ┌─────────────┐
- │ LangGraph   │
- │   Agent     │
- └─────────────┘
-      │
- ┌────┴────┐
- ▼         ▼
-SQL       RAG
-Engine    Engine
- │         │
- ▼         ▼
-Postgres  FAISS
- │         │
- └────┬────┘
-      ▼
- Local Qwen LLM
-      ▼
-Final Response
-      ▼
-Plotly Dashboard
-```
+![RAG System Architecture](RAG%20System%20Architecture.png)
 
 ---
 
